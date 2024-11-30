@@ -16,7 +16,7 @@ function App() {
   const [phone, setPhone] = useState<string>();
 
   useEffect((): void => {
-    fetch("https://hraviratoms-server-r56k.vercel.app/api")
+    fetch(`${process.env.REACT_APP_API_PROD}/api`)
       .then((res) => console.log("res", res))
       .catch((err: any) => console.log(err))
 

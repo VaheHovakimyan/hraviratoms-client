@@ -1,8 +1,5 @@
 export const sendInviteRequest = async (values: any) => {
-
-  console.log("values", values);
-
-  await fetch("https://hraviratoms-server-r56k.vercel.app/api/create", {
+  await fetch(`${process.env.REACT_APP_API_PROD}/api/create`, {
     method: "POST",
     body: JSON.stringify(values),
     headers: {
