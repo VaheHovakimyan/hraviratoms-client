@@ -6,4 +6,4 @@ export const sendInviteRequest = async (values: any) => {
       "Content-type": "application/json; charset=UTF-8"
     }
   });
-} 
+}
