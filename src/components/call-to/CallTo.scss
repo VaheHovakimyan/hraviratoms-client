@@ -1,0 +1,16 @@
+.call_to{
+  width: 40px;
+  height: 40px;
+  background-color: #222222;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  .call_to_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
