@@ -1,0 +1,26 @@
+.timeline_main {
+  width: 100%;
+  position: relative;
+  .timeline_main_background {
+    width: 100%;
+  }
+  .timeline_title{
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%, -50%);
+  }
+  .timeline_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    .timeline_item{
+      display: flex;
+      gap: 12px;
+    }
+  }
+}

@@ -7,7 +7,7 @@ import './ContactOwnerForm.scss';
 
 const initialValue = {
   name: '',
-  phone:'',
+  phone: '',
 }
 
 const ContactOwnerForm: FC = () => {
@@ -20,37 +20,37 @@ const ContactOwnerForm: FC = () => {
 
   }, []);
 
-  return(
+  return (
     <>
-    <Formik
-          initialValues={initialValue}
-          onSubmit={async (values) => {
-            console.log("values", values);
-            await sendInviteRequest({ ...values, phone });
-          }}
-        >
-          {({ values, isValid, handleChange }) => (
-            <Form>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+      <Formik
+        initialValues={initialValue}
+        onSubmit={async (values) => {
+          console.log("values", values);
+          await sendInviteRequest({ ...values, phone });
+        }}
+      >
+        {({ values, isValid, handleChange }) => (
+          <Form>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
 
-                <h3>Contact us</h3>
+              <h3>Contact us</h3>
 
-                <TextField
-                  id="name"
-                  name="name"
-                  placeholder="Name"
-                  style={{ color: 'white', background: 'white' }}
-                  onChange={handleChange}
-                />
+              <TextField
+                id="name"
+                name="name"
+                placeholder="Name"
+                style={{ color: 'white', background: 'white' }}
+                onChange={handleChange}
+              />
 
-                <PhoneInput
-                  defaultCountry="am"
-                  value={phone}
-                  onChange={(phone: any) => setPhone(phone)}
-                />
+              <PhoneInput
+                defaultCountry="am"
+                value={phone}
+                onChange={(phone: any) => setPhone(phone)}
+              />
 
 
-                {/* 
+              {/* 
                 <TextField
                   id="telNumber"
                   name="telNumber"
@@ -59,12 +59,12 @@ const ContactOwnerForm: FC = () => {
                   onChange={handleChange}
                 /> */}
 
-                <Button type="submit" style={{ height: '70px' }}>Submit</Button>
-              </div>
-            </Form>
-          )}
-        </Formik>
-        </>
+              <Button type="submit" style={{ height: '70px' }}>Submit</Button>
+            </div>
+          </Form>
+        )}
+      </Formik>
+    </>
   )
 }
 
