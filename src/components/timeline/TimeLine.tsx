@@ -34,8 +34,8 @@ const TimeLine: FC = () => {
             <div className="timeline_item">
               {/* <img src={item.icon} alt="timeline_icon" /> */}
               {item.icon}
-              <p>{item.time}</p>
-              <p>{item.location}</p>
+              <p className="time_item">{item.time}</p>
+              <p className="location_item">{item.location}</p>
             </div>
           )
         })}
