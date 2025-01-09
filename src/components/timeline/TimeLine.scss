@@ -12,10 +12,7 @@
   left: 50%;
   top: 7%;
   transform: translate(-50%, -50%);
-  // width: 287px;
   height: 74px;
-  // top: 818px;
-  // left: 79px;
   font-weight: 400;
   font-size: 35px;
   font-family: Pacifico;
@@ -37,26 +34,21 @@
     align-items: center;
     gap: 12px;
 
-    .time-item {
+    .time_item {
       width: 88px;
-      // height: 31px;
-      // top: 973px;
-      // left: 143px;
       font-weight: 400;
       font-size: 35px;
       font-family: Pacifico;
       line-height: 61.46px;
     }
-      .location_item {
-        width: 47px;
-        // height: 43px;
-        // top: 971px;
-        // left: 258px;
-        font-family: Pacifico;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 35.12px;
-      }
-    
+
+    .location_item {
+      width: 47px;
+      font-family: Pacifico;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 35.12px;
+    }
+
   }
 }
