@@ -37,7 +37,7 @@ const TimeLine: FC = () => {
               <p className="time_item">{item.time}</p>
               <p className="location_item">{item.location}</p>
             </div>
-          )
+          ) 
         })}
       </div>
     </div>
