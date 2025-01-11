@@ -1,30 +1,67 @@
 .footer_main {
+  background-color: #1E1E1E;
+  color: white;
   width: 450px;
-  height: 508px;
-  top: 3467px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: right;
+  align-items: center;
+  margin: 0 auto;
+
+ 
 
   .footer_logo {
-    color: white;
+    display: flex;
+    align-items: center;
     width: 150px;
-    height: 150px;
-    top: 22px;
-    left: 150px;
-    gap: 0px;
-    border-radius: 80px 0px 0px 0px;
+    border-radius: 50%;
     border: 3px 0px 0px 0px;
-    opacity: 0px;
   }
 
-  .number {
-    
-    padding: 60px 17px;
-    margin: 24px 24px;
-    gap: 0px;
-    opacity: 0px;
+  .text_hraviratoms{
+    font-family: Inter;
+    font-size: 25px;
+    line-height: 30.26px;
+    font-weight: 400;
+    padding: 40px;
+  }
 
+  .footer_number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 24px;
+    padding: 60px 17px;
+    font-family: Inter;
+    .footer_number_child{
+      display: flex;
+      gap: 7px;
+      padding: 5px;
+    }
+  }
+
+  .mail_hraviratoms{
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 25px;
+  }
+
+  .footer_divider {
+    width: 90%;
+    height: 1px;
+    background-color: white;
+    margin: 12px auto;
+  }
+
+  .contacts_hraviratoms {
+    display: flex;
+    gap: 20px;
+    padding: 4px 40px;
+    align-items: center;
+    justify-content: center;
   }
 }
