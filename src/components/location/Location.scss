@@ -1,0 +1,13 @@
+.location_main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 48px 0;
+  background-image: url('../../images/location_background.png');
+  .location_content{
+    width: 80%;
+    height: 400px;
+    background-color: #333;
+  }
+}
