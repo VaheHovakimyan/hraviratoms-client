@@ -4,7 +4,7 @@ import footer_mail from '../../images/footer/mail_hraviratoms.svg';
 import footer_facebook_icon from '../../images/footer/facebook_icon.svg';
 import footer_instagram_icon from '../../images/footer/instagram_icon.svg';
 import footer_tiktok_icon from '../../images/footer/tik-tok.svg';
-import footer_logo from '../../images/footer/footer_logo.png';
+import footer_logo from '../../images/footer/logo.svg';
 import './Footer.scss';
 
 const Footer: FC = () => {
