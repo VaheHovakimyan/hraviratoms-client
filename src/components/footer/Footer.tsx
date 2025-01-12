@@ -12,11 +12,11 @@ const Footer: FC = () => {
     <div className="footer_main">
       <div className="container_1">
         <div className="footer_logo">
-          <img src={footer_logo} alt="" width="150px" height="150px"/>
+          <img src={footer_logo} alt="footer_logo" width="150px" height="150px" />
         </div>
       </div>
-      <p className="text_hraviratoms">Hraviratoms.com</p>
 
+      <p className="text_hraviratoms">hraviratoms.com</p>
 
       <div className="footer_number">
         <div className="footer_number_child">
@@ -31,7 +31,8 @@ const Footer: FC = () => {
       </div>
 
       <div className="mail_hraviratoms">
-        <img src={footer_mail} alt="" width="24px" height="24px" />hraviratoms.com@gmail.com
+        <img src={footer_mail} alt="" width="24px" height="24px" />
+        <span>hraviratoms.com@gmail.com</span>
       </div>
 
       <div className="footer_divider">
