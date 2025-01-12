@@ -29,9 +29,9 @@ const TimeLine: FC = () => {
       <img src={timeline_background} alt="timeline_background" className="timeline_main_background" />
       <h2 className="timeline_title">Timeline</h2>
       <div className="timeline_content">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <div className="timeline_item">
+            <div className="timeline_item" key={index}>
               {/* <img src={item.icon} alt="timeline_icon" /> */}
               {item.icon}
               <p className="time_item">{item.time}</p>
