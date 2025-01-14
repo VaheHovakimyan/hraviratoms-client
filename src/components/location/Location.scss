@@ -6,8 +6,47 @@
   padding: 48px 0;
   background-image: url('../../images/location_background.png');
   .location_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
     width: 80%;
     height: 400px;
-    background-color: #333;
+    background-color: rgba(240, 240, 240, 0.7);
+    .location_text{
+      align-items: center;
+      width: 298px;
+      // padding: 20px 0px;
+      //  margin: auto 50px;
+      // left: 35px;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+    }
+    .location_img{
+      width: 300px;
+      padding: 12px 0px;
+      // height: 200px;
+       top: 110px;
+       left: 33px;
+      border-radius: 35px;
+    }
+
+    .location_map{
+      align-items: center;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 8%;
+      width: 122px;
+      padding: 10px 10px;
+      left: 122px;
+      border-radius: 10px;
+      border: 1px;
+    }
   }
 }
