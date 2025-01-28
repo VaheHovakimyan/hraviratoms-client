@@ -3,6 +3,7 @@ import { Formik, Form, Field } from 'formik';
 import { Button, TextField } from '@mui/material';
 import { sendInviteRequest } from '../../api/invite-api';
 import { PhoneInput } from 'react-international-phone';
+import person_icon from '../../images/contact/person_icon.svg';
 import './ContactOwnerForm.scss';
 
 const initialValue = {
@@ -31,11 +32,40 @@ const ContactOwnerForm: FC = () => {
       >
         {({ values, isValid, handleChange }) => (
           <Form>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div className="contact_main_div">
 
-              <h3>Contact us</h3>
+              <h3 className="contact_div_title">Պատասխան կարող եք ուղարկել մինչև 15.01.2025թ</h3>
 
-              <TextField
+              <div className="contact_form">
+                <div className="contact_form_input_div">
+                  <div className="contact_form_input_div_span">
+                    <p className="contact_form_input_span">Անուն Ազգանուն</p>
+                    <div className="contact_form_input_div_border">
+                      <div className="contact_form_input_and_icon_div">
+                        <img src={person_icon} alt="person_icon" className="contact_form_input_icon" />
+                        <input type="text" className="contact_input" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="contact_form_input_div_span">
+                    <p className="contact_form_input_span">Հեռախոսահամար</p>
+                    <div className="contact_form_input_div_border">
+                      <div className="contact_form_input_and_icon_div">
+                        <PhoneInput
+                          defaultCountry="am"
+                          value={phone}
+                          onChange={(phone: any) => setPhone(phone)}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="">
+
+                </div>
+              </div>
+              {/* <TextField
                 id="name"
                 name="name"
                 placeholder="Name"
@@ -47,7 +77,7 @@ const ContactOwnerForm: FC = () => {
                 defaultCountry="am"
                 value={phone}
                 onChange={(phone: any) => setPhone(phone)}
-              />
+              /> */}
 
 
               {/* 
@@ -59,11 +89,11 @@ const ContactOwnerForm: FC = () => {
                   onChange={handleChange}
                 /> */}
 
-              <Button type="submit" style={{ height: '70px' }}>Submit</Button>
+              {/* <Button type="submit" style={{ height: '70px' }}>Submit</Button> */}
             </div>
           </Form>
         )}
-      </Formik>
+      </Formik >
     </>
   )
 }
