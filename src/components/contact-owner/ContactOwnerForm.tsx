@@ -61,8 +61,14 @@ const ContactOwnerForm: FC = () => {
                     </div>
                   </div>
                 </div>
-                <div className="">
+                <div className="contact_div_general_2">
+                  <p className="contact_paragraph">Արարողությանը ներկա եք լինելու?</p>
 
+                  <div className="contact_input">
+                    <input type="radio" name="answer" /> <label>Այո</label>
+                    <input type="radio" name="answer" /> <label>Ոչ</label>
+                  </div>
+                  <button className="contact_button">Ուղարկել</button>
                 </div>
               </div>
               {/* <TextField
