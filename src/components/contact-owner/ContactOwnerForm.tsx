@@ -64,10 +64,17 @@ const ContactOwnerForm: FC = () => {
                 <div className="contact_div_general_2">
                   <p className="contact_paragraph">Արարողությանը ներկա եք լինելու?</p>
 
-                  <div className="contact_input">
-                    <input type="radio" name="answer" /> <label>Այո</label>
-                    <input type="radio" name="answer" /> <label>Ոչ</label>
+                  <div id="contact_input">
+                    <div>
+                      <input type="radio" name="answer" id="Yes" />
+                      <label className="contact_radio_label">Այո</label>
+                    </div>
+                    <div>
+                      <input type="radio" name="answer" id="No" />
+                      <label className="contact_radio_label">Ոչ</label>
+                    </div>
                   </div>
+
                   <button className="contact_button">Ուղարկել</button>
                 </div>
               </div>

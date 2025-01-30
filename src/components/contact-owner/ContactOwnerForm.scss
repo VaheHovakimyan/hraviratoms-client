@@ -11,7 +11,9 @@
   align-items: center;
   flex-direction: column;
   gap: 8px;
+  padding: 32px 24px;
   .contact_div_title{
+    padding: 32px 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     color: #1E1E1E;
@@ -55,8 +57,12 @@
       }
     }
     .contact_div_general_2{
-      display: grid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .contact_paragraph{
+        padding: 10px 0;
         color: #1E1E1E;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 400;
@@ -64,7 +70,10 @@
         line-height: 21.85px;
         text-align: center;
       }
-      .contact_input{
+      #contact_input{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
         color: #1E1E1E;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: 400;
@@ -72,6 +81,26 @@
         line-height: 28.75px;
         text-align: center;
         padding: 10px 20px;
+        .contact_radio_label{
+          padding: 8px;
+        }
+      }
+      .contact_button{
+        padding: 12px 24px;
+        max-width: 900px;
+        width: 100%;
+        // height: 43px;
+        // top: 3286px;
+        // left: 77px;
+        border-radius: 30px;
+        border: 1px #000000 solid;
+        background-color: #1E1E1E;
+        color: #FFFDFD;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        align-items: center;
       }
     }
   }
