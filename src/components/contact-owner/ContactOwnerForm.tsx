@@ -9,17 +9,11 @@ import './ContactOwnerForm.scss';
 const initialValue = {
   name: '',
   phone: '',
+  isVisiting: 'Yes'
 }
 
 const ContactOwnerForm: FC = () => {
   const [phone, setPhone] = useState<string>();
-
-  useEffect((): void => {
-    fetch(`${process.env.REACT_APP_API_PROD}/api`)
-      .then((res) => console.log("res", res))
-      .catch((err: any) => console.log(err))
-
-  }, []);
 
   return (
     <>
@@ -88,7 +82,7 @@ const ContactOwnerForm: FC = () => {
                     </div>
                   </div>
 
-                  <button className="contact_button">Ուղարկել</button>
+                  <button className="contact_button" type="submit">Ուղարկել</button>
                 </div>
               </div>
 
