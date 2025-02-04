@@ -43,7 +43,14 @@ const ContactOwnerForm: FC = () => {
                     <div className="contact_form_input_div_border">
                       <div className="contact_form_input_and_icon_div">
                         <img src={person_icon} alt="person_icon" className="contact_form_input_icon" />
-                        <input type="text" className="contact_input" />
+                        <input
+                          id="name"
+                          name="name"
+                          type="text"
+                          placeholder="Name"
+                          onChange={handleChange}
+                          className="contact_input"
+                        />
                       </div>
                     </div>
                   </div>
@@ -51,11 +58,17 @@ const ContactOwnerForm: FC = () => {
                   <div className="contact_form_input_div_span">
                     <p className="contact_form_input_span">Հեռախոսահամար</p>
                     <div className="contact_form_input_div_border">
-                      <div className="contact_form_input_and_icon_div">
+                      <div className="contact_form_input_and_icon_div" style={{padding: '12px 16px'}}>
                         <PhoneInput
                           defaultCountry="am"
                           value={phone}
-                          onChange={(phone: any) => setPhone(phone)}
+                          onChange={(phone: string) => setPhone(phone)}
+                          style={{
+                            width: '100%',
+                            height: '100%',
+                            border: 'none',
+                            outline: 'none',
+                          }}
                         />
                       </div>
                     </div>
@@ -65,12 +78,12 @@ const ContactOwnerForm: FC = () => {
                   <p className="contact_paragraph">Արարողությանը ներկա եք լինելու?</p>
 
                   <div id="contact_input">
-                    <div>
-                      <input type="radio" name="answer" id="Yes" />
+                    <div className="contact_input_flex">
+                      <Field type="radio" name="isVisiting" id="Yes" value="Yes" />
                       <label className="contact_radio_label">Այո</label>
                     </div>
-                    <div>
-                      <input type="radio" name="answer" id="No" />
+                    <div className="contact_input_flex">
+                      <Field type="radio" name="isVisiting" id="No" value="No" />
                       <label className="contact_radio_label">Ոչ</label>
                     </div>
                   </div>
@@ -78,31 +91,7 @@ const ContactOwnerForm: FC = () => {
                   <button className="contact_button">Ուղարկել</button>
                 </div>
               </div>
-              {/* <TextField
-                id="name"
-                name="name"
-                placeholder="Name"
-                style={{ color: 'white', background: 'white' }}
-                onChange={handleChange}
-              />
 
-              <PhoneInput
-                defaultCountry="am"
-                value={phone}
-                onChange={(phone: any) => setPhone(phone)}
-              /> */}
-
-
-              {/* 
-                <TextField
-                  id="telNumber"
-                  name="telNumber"
-                  placeholder="Telephone number"
-                  style={{ color: 'white', background: 'white' }}
-                  onChange={handleChange}
-                /> */}
-
-              {/* <Button type="submit" style={{ height: '70px' }}>Submit</Button> */}
             </div>
           </Form>
         )}

@@ -25,3 +25,13 @@ code {
 #root{
   height: 100%;
 }
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: black;
+}
+
+a{
+  text-decoration: none;
+}

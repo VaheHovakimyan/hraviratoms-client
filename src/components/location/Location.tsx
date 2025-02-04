@@ -18,12 +18,12 @@ const Location: FC<LocationComponentProps> = ({locationData}) => {
           <p className="location_text">Պսակադրության արարողությունը տեղի կունենա Հռիփսիմե եկեղեցում</p>
          </div>
 
-         <div className="location_img">
-          <img src={location_icon} alt="location_icon"/>
+         <div className="location_img_div">
+          <img src={location_icon} alt="location_icon" className="location_img"/>
          </div>
 
          <div>
-          <button className="location_map">Քարտեզ</button>
+          <a className="location_map" href="https://www.google.com/maps?q=Saint+Gayane+Church">Քարտեզ</a>
          </div>
       </div>
     </div>

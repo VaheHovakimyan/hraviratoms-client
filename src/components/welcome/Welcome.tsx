@@ -25,7 +25,7 @@ const Welcome: FC = () => {
           </p>
           <div className="timer_block">
             <p className="timer_block_title">Left for wedding day</p>
-            <p className="timer_block_coutndown"><Countdown date={new Date('January 17, 2025 18:30:00').getTime()} /></p>
+            <p className="timer_block_coutndown"><Countdown date={new Date('April 17, 2025 18:30:00').getTime()} /></p>
           </div>
         </div>
       </div>
