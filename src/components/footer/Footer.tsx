@@ -31,7 +31,7 @@ const Footer: FC = () => {
       </div>
 
       <div className="mail_hraviratoms">
-        <img src={footer_mail} alt="" width="24px" height="24px" />
+        <img src={footer_mail} alt="" width="24px" height="24px" className="mail_icon"/>
         <span>hraviratoms.com@gmail.com</span>
       </div>
 
