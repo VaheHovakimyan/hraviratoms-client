@@ -2,45 +2,50 @@ import { FC } from "react";
 import Footer from "../footer/Footer";
 import './Admin.scss';
 
+
+
 const Admin: FC = () => {
     return (
         <div>
+
+            <h3>Գեղամ Հակոբյանի հյուրերի ցուցակը</h3>
+
             <table>
                 <tr>
-                    <th className="container">Number</th>
-                    <th className="container">First Name</th>
-                    <th className="container">Telephone</th>
-                    <th className="container">Nerka Kgtnvi?</th>
+                    <th className="container">Համար</th>
+                    <th className="container">Անուն Ազգանուն</th>
+                    <th className="container">Հեռախոսահամար</th>
+                    <th className="container">Ներկա Կգտնվի՞</th>
                 </tr>
                 <tr>
                     <td className="child1">1</td>
-                    <td className="child1">Gegham Hakobyan</td>
+                    <td className="child1">Գեղամ Հակոբյան</td>
                     <td className="child1">+34254726378</td>
-                    <td className="child1">Ayo</td>
+                    <td className="child1">Այո</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Gegham Hakobyan</td>
+                    <td>Գեղամ Հակոբյան</td>
                     <td>+34254726378</td>
-                    <td>Voch</td>
+                    <td>Ոչ</td>
                 </tr>
                 <tr>
                     <td className="child1">3</td>
-                    <td className="child1">Gegham Hakobyan</td>
+                    <td className="child1">Գեղամ Հակոբյան</td>
                     <td className="child1">+34254726378</td>
-                    <td className="child1">Ayo</td>
+                    <td className="child1">Այո</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Gegham Hakobyan</td>
+                    <td>Գեղամ Հակոբյան</td>
                     <td>+34254726378</td>
-                    <td>Ayo</td>
+                    <td>Այո</td>
                 </tr>
                 <tr>
                     <td className="child1">5</td>
-                    <td className="child1">Gegham Hakobyan</td>
+                    <td className="child1">Գեղամ Հակոբյան</td>
                     <td className="child1">+34254726378</td>
-                    <td className="child1">Voch</td>
+                    <td className="child1">Ոչ</td>
                 </tr>
             </table>
             <Footer />

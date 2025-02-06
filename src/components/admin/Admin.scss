@@ -1,9 +1,14 @@
+h3{
+    text-align: center;
+    font-family: Inter;
+}
+
 table, td, th {
     border: 1px solid;
 }
 
 table {
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 24px;
     width: 70%;
     border-collapse: collapse;
@@ -17,6 +22,13 @@ table {
     }
 }
 
+th{
+    padding: 6px;
+    font-family: Inter;
+}
+
 td {
+    padding: 6px;
+    font-family: Inter;
     text-align: center;
 }
