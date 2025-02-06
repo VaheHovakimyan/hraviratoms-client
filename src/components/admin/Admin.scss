@@ -1,0 +1,22 @@
+table, td, th {
+    border: 1px solid;
+}
+
+table {
+    margin: 0 auto;
+    padding: 24px;
+    width: 70%;
+    border-collapse: collapse;
+    tr{
+        .container{
+            background-color: #5B9BD5;
+        }
+        .child1{
+            background-color: #DDEBF7;
+        }
+    }
+}
+
+td {
+    text-align: center;
+}
