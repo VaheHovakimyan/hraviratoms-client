@@ -3,13 +3,10 @@ import Footer from "../footer/Footer";
 import './Admin.scss';
 
 
-
 const Admin: FC = () => {
     return (
         <div>
-
             <h3>Գեղամ Հակոբյանի հյուրերի ցուցակը</h3>
-
             <table>
                 <tr>
                     <th className="container">Համար</th>
@@ -18,10 +15,10 @@ const Admin: FC = () => {
                     <th className="container">Ներկա Կգտնվի՞</th>
                 </tr>
                 <tr>
-                    <td className="child1">1</td>
-                    <td className="child1">Գեղամ Հակոբյան</td>
-                    <td className="child1">+34254726378</td>
-                    <td className="child1">Այո</td>
+                    <td>1</td>
+                    <td>Գեղամ Հակոբյան</td>
+                    <td>+34254726378</td>
+                    <td>Այո</td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -30,10 +27,10 @@ const Admin: FC = () => {
                     <td>Ոչ</td>
                 </tr>
                 <tr>
-                    <td className="child1">3</td>
-                    <td className="child1">Գեղամ Հակոբյան</td>
-                    <td className="child1">+34254726378</td>
-                    <td className="child1">Այո</td>
+                    <td>3</td>
+                    <td>Գեղամ Հակոբյան</td>
+                    <td>+34254726378</td>
+                    <td>Այո</td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -42,16 +39,15 @@ const Admin: FC = () => {
                     <td>Այո</td>
                 </tr>
                 <tr>
-                    <td className="child1">5</td>
-                    <td className="child1">Գեղամ Հակոբյան</td>
-                    <td className="child1">+34254726378</td>
-                    <td className="child1">Ոչ</td>
+                    <td>5</td>
+                    <td>Գեղամ Հակոբյան</td>
+                    <td>+34254726378</td>
+                    <td>Ոչ</td>
                 </tr>
             </table>
             <Footer />
         </div>
     )
 }
-
 
 export default Admin;

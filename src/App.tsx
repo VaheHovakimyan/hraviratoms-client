@@ -5,17 +5,36 @@ import CallTo from './components/call-to/CallTo';
 import TimeLine from './components/timeline/TimeLine';
 import Location from './components/location/Location';
 
+import location_icon from './images/location/church_icon.png';
+import restaurant_icon from './images/location/nor_dvin.jpg';
+
 import 'react-international-phone/style.css';
 import './App.css';
 
-export interface ILocationData {
+
+export interface ILocationDataContent {
   name: string;
   background: string;
+  link: string;
 }
 
+export interface ILocationData {
+  church: ILocationDataContent,
+  restaurant: ILocationDataContent
+}
+
+
 const locationData: ILocationData = {
-  name: "Nor Dvin",
-  background: ''
+  church: {
+    name: 'Պսակադրության արարողությունը տեղի կունենա Հռիփսիմե եկեղեցում',
+    background: location_icon,
+    link: 'https://maps.app.goo.gl/XkLZw953nEbLyxFu7'
+  },
+  restaurant: {
+    name: 'Հարսանըանց հանդեսը տեղի կունենա “Nor dvin” ռեստորանում',
+    background: restaurant_icon,
+    link: 'https://www.google.com/maps/search/?api=1&query=Restaurant+Nor+Dvin+Armenia'
+  }
 }
 
 function App() {
@@ -24,7 +43,8 @@ function App() {
     <div className='main_wrapper'>
       <Welcome />
       <TimeLine />
-      <Location locationData={locationData} />
+      <Location locationData={locationData.church} />
+      <Location locationData={locationData.restaurant} />
       <ContactOwnerForm />
       <Footer />
       <CallTo />

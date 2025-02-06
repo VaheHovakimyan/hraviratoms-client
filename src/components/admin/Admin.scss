@@ -1,34 +1,40 @@
-h3{
-    text-align: center;
-    font-family: Inter;
+h3 {
+  text-align: center;
+  font-family: Inter;
 }
 
-table, td, th {
-    border: 1px solid;
+table,
+td,
+th {
+  border: 1px solid;
 }
 
 table {
-    margin: 30px auto;
-    padding: 24px;
-    width: 70%;
-    border-collapse: collapse;
-    tr{
-        .container{
-            background-color: #5B9BD5;
-        }
-        .child1{
-            background-color: #DDEBF7;
-        }
-    }
+  margin: 30px auto;
+  padding: 24px;
+  width: 70%;
+  border-collapse: collapse;
+
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  tr:nth-child(even) {
+    background-color: #ddebf7;
+  }
+  tr{
+      .container{
+          background-color: #5B9BD5;
+      }
+  }
 }
 
-th{
-    padding: 6px;
-    font-family: Inter;
+th {
+  padding: 6px;
+  font-family: Inter;
 }
 
 td {
-    padding: 6px;
-    font-family: Inter;
-    text-align: center;
+  padding: 6px;
+  font-family: Inter;
+  text-align: center;
 }
