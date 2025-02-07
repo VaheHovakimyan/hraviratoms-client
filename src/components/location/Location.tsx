@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { ILocationData, ILocationDataContent } from "../../App"; 
+import { ILocationDataContent } from "../../common/type";
 import './Location.scss';
 
 interface LocationComponentProps {

@@ -1,12 +1,12 @@
-import { FC, useEffect, useState } from "react";
+import { FC, useState } from "react";
 import { Formik, Form, Field } from 'formik';
-import { Button, TextField } from '@mui/material';
 import { sendInviteRequest } from '../../api/invite-api';
 import { PhoneInput } from 'react-international-phone';
 import person_icon from '../../images/contact/person_icon.svg';
+import { IGuest } from "../../common/type";
 import './ContactOwnerForm.scss';
 
-const initialValue = {
+const initialValue: IGuest = {
   name: '',
   phone: '',
   isVisiting: 'Yes'
@@ -52,7 +52,7 @@ const ContactOwnerForm: FC = () => {
                   <div className="contact_form_input_div_span">
                     <p className="contact_form_input_span">Հեռախոսահամար</p>
                     <div className="contact_form_input_div_border">
-                      <div className="contact_form_input_and_icon_div" style={{padding: '12px 16px'}}>
+                      <div className="contact_form_input_and_icon_div" style={{ padding: '12px 16px' }}>
                         <PhoneInput
                           defaultCountry="am"
                           value={phone}
