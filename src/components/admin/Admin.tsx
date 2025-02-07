@@ -34,7 +34,7 @@ const Admin: FC = () => {
         {guests.map((item, index) => {
           return (
             <tr key={item._id}>
-              <td>{index}</td>
+              <td>{index + 1}</td>
               <td>{item?.name || ''}</td>
               <td>{item?.phone || ''}</td>
               <td>{item.isVisiting === "Yes" ? 'Այո' : 'Ոչ'}</td>
