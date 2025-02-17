@@ -64,6 +64,25 @@
           font-size: 44px;
           text-align: center;
         }
+
+        .timer_parent{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          color: #FFFFFF;
+          .timer_name{
+            font-size: 20px;
+            font-family: Inter;
+            .day{
+              gap: 10px;
+            }
+            .hour{
+              gap: 20px;
+            }
+          }
+        }
       }
     }
   }

@@ -11,17 +11,17 @@ const data: ITimeline[] = [
   {
     icon: <HomeIcon />,
     time: '12:00',
-    location: 'Square'
+    location: 'Հարսի Տուն'
   },
   {
     icon: <ChurchIcon />,
     time: '14:00',
-    location: 'Church'
+    location: 'Եկեղեցի'
   },
   {
     icon: <RestaurantIcon />,
     time: '18:00',
-    location: 'Restaurant'
+    location: 'Ռեստորան'
   },
 ];
 
@@ -29,7 +29,7 @@ const TimeLine: FC = () => {
   return (
     <div className="timeline_main">
       <img src={timeline_background} alt="timeline_background" className="timeline_main_background" />
-      <h2 className="timeline_title">Timeline</h2>
+      <h2 className="timeline_title">Ժամանակացույց</h2>
       <div className="timeline_content">
         {data.map((item) => {
           return (

@@ -41,7 +41,7 @@ const ContactOwnerForm: FC = () => {
                           id="name"
                           name="name"
                           type="text"
-                          placeholder="Name"
+                          placeholder="Անուն Ազգանուն"
                           onChange={handleChange}
                           className="contact_input"
                         />
@@ -69,7 +69,7 @@ const ContactOwnerForm: FC = () => {
                   </div>
                 </div>
                 <div className="contact_div_general_2">
-                  <p className="contact_paragraph">Արարողությանը ներկա եք լինելու?</p>
+                  <p className="contact_paragraph">Արարողությանը ներկա ե՞ք լինելու</p>
 
                   <div id="contact_input">
                     <div className="contact_input_flex">

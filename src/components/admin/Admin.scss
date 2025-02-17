@@ -1,7 +1,9 @@
 h3 {
   text-align: center;
   font-family: Inter;
+  margin: 36px;
 }
+
 
 table,
 td,
@@ -14,6 +16,14 @@ table {
   padding: 24px;
   width: 70%;
   border-collapse: collapse;
+
+  @media only screen and (max-width: 500px){
+    table{
+      min-width: 100%;
+      min-height: 100%;
+      // margin: 20px;
+    }
+  }
 
   tr:nth-child(odd) {
     background-color: #ffffff;
@@ -29,12 +39,18 @@ table {
 }
 
 th {
-  padding: 6px;
+  padding: 2px;
   font-family: Inter;
 }
 
 td {
-  padding: 6px;
+  padding: 2px;
   font-family: Inter;
   text-align: center;
+}
+
+@media only screen and (max-width: 500px){
+  h3{
+    width: 100%;
+  }
 }

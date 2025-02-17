@@ -28,6 +28,13 @@ const Welcome: FC = () => {
             <p className="timer_block_coutndown">
               <Countdown date={new Date('April 17, 2025 18:30:00').getTime()} />
             </p>
+
+            <div className="timer_parent">
+              <div className="timer_name">
+                <span className="day">օր</span> : <span className="hour">ժամ</span> ։ <span className="minute">րոպե</span> ։ <span className="second">վրկ</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
