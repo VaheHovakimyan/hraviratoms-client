@@ -2,7 +2,8 @@ import { FC } from "react";
 import HomeIcon from '@mui/icons-material/Home';
 import ChurchIcon from '@mui/icons-material/Church';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
-import timeline_background from '../../images/timeline_background.png';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
+import timeline_background from '../../images/timeline_background.jpg';
 import { ITimeline } from "../../common/type";
 import './TimeLine.scss';
 
@@ -11,7 +12,7 @@ const data: ITimeline[] = [
   {
     icon: <HomeIcon />,
     time: '12:00',
-    location: 'Հարսի Տուն'
+    location: 'Հարսի տուն'
   },
   {
     icon: <ChurchIcon />,
@@ -21,7 +22,12 @@ const data: ITimeline[] = [
   {
     icon: <RestaurantIcon />,
     time: '18:00',
-    location: 'Ռեստորան'
+    location: 'Ռեստորան Դվին'
+  },
+  {
+    icon: <WavingHandIcon />,
+    time: '23:00',
+    location: 'Բարի գիշեր'
   },
 ];
 
@@ -34,7 +40,7 @@ const TimeLine: FC = () => {
         {data.map((item) => {
           return (
             <div className="timeline_item" key={item.location}>
-              {item.icon}
+              <div style={{marginTop: '8px'}}>{item.icon}</div>
               <p className="time_item">{item.time}</p>
               <p className="location_item">{item.location}</p>
             </div>
