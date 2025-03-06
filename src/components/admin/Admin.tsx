@@ -45,7 +45,7 @@ const Admin: FC = () => {
                 <p className="td_p">{item?.name || ''}</p>
               </div>
               <div id="guest_phone" className="td">
-                <a href="tel:+37477497515" className="call_to_link">
+                <a href={`tel:${item?.phone}`} className="call_to_link">
                   <p className="td_p">{item?.phone || ''}</p>
                 </a>
               </div>
