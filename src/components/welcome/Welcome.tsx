@@ -31,10 +31,9 @@ const Welcome: FC = () => {
 
             <div className="timer_parent">
               <div className="timer_name">
-                <span className="day">օր</span> : <span className="hour">ժամ</span> ։ <span className="minute">րոպե</span> ։ <span className="second">վրկ</span>
+                <span className="day">օր</span> : <span className="hour">ժամ</span> : <span className="minute">րոպե</span> : <span className="second">վրկ</span>
               </div>
             </div>
-
           </div>
         </div>
       </div>

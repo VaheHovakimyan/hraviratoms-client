@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from "react";
 import Footer from "../footer/Footer";
-import './Admin.scss';
 import { getGuests } from "../../api/invite-api";
 import Loader from "../loader/Loader";
+import './Admin.scss';
 
 interface IGuestData {
   _id: string;
@@ -24,7 +24,10 @@ const Admin: FC = () => {
 
   return (
     <>
-      <h3>Գեղամ Հակոբյանի հյուրերի ցուցակը</h3>
+      <div className="admin_title_div">
+        <h3>Գեղամ Հակոբյանի և Լիաննա Հակոբյանի հյուրերի ցուցակը</h3>
+        <h4 className="guests_count">Ձեր հյուրերի քանակը {guests.length} է</h4>
+      </div>
       <div className="table">
         <div className="tr">
           <div className="admin_param" id="guest_id">No.</div>
@@ -42,7 +45,9 @@ const Admin: FC = () => {
                 <p className="td_p">{item?.name || ''}</p>
               </div>
               <div id="guest_phone" className="td">
-                <p className="td_p">{item?.phone || ''}</p>
+                <a href="tel:+37477497515" className="call_to_link">
+                  <p className="td_p">{item?.phone || ''}</p>
+                </a>
               </div>
               <div id="guest_isVisting" className="td">
                 <p className="td_p">{item.isVisiting === "Yes" ? 'Այո' : 'Ոչ'}</p>

@@ -1,6 +1,10 @@
-h3 {
-  text-align: center;
-  margin: 24px auto;
+.admin_title_div{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 1440px; 
 }
 
 .table,
@@ -25,6 +29,10 @@ h3 {
     align-items: center;
     height: 40px;
     padding: 8px;
+    .call_to_link{
+      color: #111;
+      text-decoration: underline;
+    }
   }
 
   .td_p {
