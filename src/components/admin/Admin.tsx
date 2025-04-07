@@ -12,7 +12,7 @@ interface IGuestData {
 }
 
 const Admin: FC = () => {
-  const [guests, setGuests] = useState<IGuestData[]>([]);
+  const [guests, setGuests] = useState<IGuestData[] | null>(null);
 
   useEffect((): void => {
     getGuests()
@@ -26,7 +26,7 @@ const Admin: FC = () => {
     <>
       <div className="admin_title_div">
         <h3>Գեղամ Հակոբյանի և Լիաննա Հակոբյանի հյուրերի ցուցակը</h3>
-        <h4 className="guests_count">Ձեր հյուրերի քանակը {guests.length} է</h4>
+        <h4 className="guests_count">Ձեր հյուրերի քանակը {guests?.length} է</h4>
       </div>
       <div className="table">
         <div className="tr">
@@ -35,7 +35,7 @@ const Admin: FC = () => {
           <div className="admin_param" id="guest_phone">Հեռախոսահամար</div>
           <div className="admin_param" id="guest_isVisting">Ներկա Կգտնվի՞</div>
         </div>
-        {guests.length ? guests.map((item, index) => {
+        {guests !== null ? guests.map((item, index) => {
           return (
             <div key={item._id} className="tr">
               <div id="guest_id" className="td">
