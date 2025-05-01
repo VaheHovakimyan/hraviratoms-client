@@ -26,7 +26,7 @@ const Welcome: FC = () => {
           <div className="timer_block">
             <p className="timer_block_title">Left for wedding day</p>
             <p className="timer_block_coutndown">
-              <Countdown date={new Date('April 17, 2025 18:30:00').getTime()} />
+              <Countdown date={new Date('August 31, 2025 18:30:00').getTime()} />
             </p>
 
             <div className="timer_parent">
